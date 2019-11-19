@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in lst %}
+{% if forloop.first %} <p>=======</p>{% endif %}
+
+
+<li>{{ forloop.counter }}{{ i }}</li>
+    {% if forloop.last %}<p>=======</p>{% endif %}
+{% empty %}
+<p>
+    当前无城市名
+</p>
+
+{% endfor %}
+
+
+</body>
+</html>

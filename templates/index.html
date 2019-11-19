@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block mytitle %}
+        <title>1908</title>
+    {% endblock %}
+</head>
+<body>
+<a href="/sports">体育</a>
+<a href="/music">音乐</a>
+<a href="/index">首页</a>
+<br>
+<br>
+{% block info %}
+    欢迎来到1908主页
+    {{ lst }}
+{% endblock %}
+<br>
+<h3>如有问题请联系 xxxxxx</h3>
+</body>
+</html>
